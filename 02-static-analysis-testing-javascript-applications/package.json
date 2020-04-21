@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "lint": "npx eslint .",
-    "lint:fix": "npx eslint . --fix"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",

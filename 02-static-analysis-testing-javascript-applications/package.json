@@ -4,22 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir dist",
+    "build": "babel src --extensions .js,.ts,.tsx --out-dir dist",
+    "check-types": "tsc",
     "lint": "eslint --ignore-path .gitignore .",
-    "lint:fix": "eslint . --fix",
-    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json)\"",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier --ignore-path .gitignore \"**/*.+(js|json|ts|tsx)\"",
     "format": "npm run prettier -- --write",
-    "check-format": "npm run prettier -- --list-different ",
-    "validate": "npm run check-format && npm run lint && npm run build"
+    "check-format": "npm run prettier -- --list-different",
+    "validate": "npm run check-types && npm run check-format && npm run lint && npm run build"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
+    "@babel/preset-typescript": "^7.9.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.20.2",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "typescript": "^3.8.3"
   },
   "keywords": [],
   "author": "",

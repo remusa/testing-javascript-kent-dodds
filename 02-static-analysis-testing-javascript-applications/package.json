@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "lint": "eslint .",
+    "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint . --fix"
   },
   "devDependencies": {

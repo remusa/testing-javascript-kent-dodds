@@ -11,7 +11,7 @@ test('returns winner', () => {
     ['Kent C. Dodds', 'Ken Wheeler'],
     ['Kent C. Dodds', 'Ken Wheeler']
   ])
-  // could also do these assertions:
+  // utils.getWinner.mock.calls covers the following assertions
   expect(utils.getWinner).toHaveBeenCalledTimes(2)
   expect(utils.getWinner).toHaveBeenNthCalledWith(
     1,

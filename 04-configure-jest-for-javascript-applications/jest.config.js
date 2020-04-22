@@ -1,3 +1,5 @@
+const path = require('path')
+
 module.exports = {
   // To run Jest without jsdom, we use jest-environment-node
   // testEnvironment: 'jest-environment-node',
@@ -17,4 +19,7 @@ module.exports = {
     // 'jest-serializer-path',
     'jest-emotion'
   ],
+
+  // Tell Jest to resolve custom module directories (the ones that use relative paths instead of absolute ones)
+  moduleDirectories: ['node_modules', path.join(__dirname, 'src'), 'shared'],
 };

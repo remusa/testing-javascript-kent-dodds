@@ -7,5 +7,7 @@ module.exports = {
   moduleNameMapper: {
     // To fix the error from trying to import CSS files, configure Jest to resolve to a file we specify whenever if it ends with .css
     '\\.css$': require.resolve('./test/style-mock.js'),
+    // 
+    '\\.module\\.css$': 'identity-obj-proxy',
   },
 };

@@ -1,6 +1,7 @@
 const thumbWar = require('../thumb-war')
 const utilsMock = require('../utils')
 
+// If using ES modules instead of CommonJS, monkeypatching doesn't work, so we have to mock the entire module  using the jest.mock API
 jest.mock('../utils', () => {
   return {
     getWinner: jest.fn((p1, p2) => p1)

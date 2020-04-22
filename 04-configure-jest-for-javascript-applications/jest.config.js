@@ -22,4 +22,7 @@ module.exports = {
 
   // Tell Jest to resolve custom module directories (the ones that use relative paths instead of absolute ones)
   moduleDirectories: ['node_modules', path.join(__dirname, 'src'), 'shared'],
+
+  // Setup files to be run before any test runs
+  setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
 };

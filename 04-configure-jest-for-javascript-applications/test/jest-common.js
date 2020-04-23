@@ -61,7 +61,7 @@ module.exports = {
 
   // Watch only selected Jest projects
   watchPlugins: [
-    'jest-watch-select-projects'
+    'jest-watch-select-projects',
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname',
   ],

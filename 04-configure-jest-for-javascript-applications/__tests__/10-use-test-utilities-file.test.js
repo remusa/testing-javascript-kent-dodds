@@ -1,11 +1,13 @@
 import '@testing-library/react'
-import {render} from 'calculator-test-utils'
+import { render } from 'calculator-test-utils'
 import React from 'react'
 import CalculatorDisplay from '../src/shared/calculator-display'
-import {light} from '../src/themes'
+import { light } from '../src/themes'
 
 test('renders', () => {
-  const {container} = render(<CalculatorDisplay value="0" />, {theme: light})
+  const { container } = render(<CalculatorDisplay value="0" />, {
+    theme: light,
+  })
   expect(container.firstChild).toMatchInlineSnapshot(`
     .emotion-0 {
       position: relative;

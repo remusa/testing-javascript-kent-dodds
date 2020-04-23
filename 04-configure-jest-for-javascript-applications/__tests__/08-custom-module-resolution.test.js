@@ -1,7 +1,7 @@
 import '@testing-library/react'
 import React from 'react'
 import {render} from '@testing-library/react'
-import Calculator from './src/calculator'
+import Calculator from '../src/calculator'
 
 test('renders', () => {
   // this test will throw an error because we're using dynamic imports in the

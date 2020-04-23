@@ -2,8 +2,8 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "*": ["src/*", "src/shared/*"]
+      "*": ["src/*", "src/shared/*", "test/*"]
     }
   },
-  "include": ["src", "01-install-jest.test.js"]
+  "include": ["src"]__tests__/01-install-jest.test.js
 }

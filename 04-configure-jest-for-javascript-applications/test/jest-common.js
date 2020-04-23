@@ -58,4 +58,7 @@ module.exports = {
       lines: 100,
     },
   },*/
+
+  // Watch only selected Jest projects
+  watchPlugins: ['jest-watch-select-projects'],
 }

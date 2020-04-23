@@ -30,4 +30,7 @@ module.exports = {
 
   // Setup configurations to be run before any test runs
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
+
+  // Setup test coverage ignoring setup files
+  collectCoverageFrom: ['**/src/**/*.js'],
 }

@@ -33,4 +33,20 @@ module.exports = {
 
   // Setup test coverage ignoring setup files
   collectCoverageFrom: ['**/src/**/*.js'],
+
+  // Setup coverage threshold
+  coverageThreshold: {
+    global: {
+      statements: 15,
+      branches: 10,
+      functions: 15,
+      lines: 15,
+    },
+    './src/shared/utils.js': {
+      statements: 100,
+      branches: 80,
+      functions: 100,
+      lines: 100,
+    },
+  },
 }

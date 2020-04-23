@@ -17,12 +17,17 @@ module.exports = {
   snapshotSerializers: [
     // Replaces absolute paths with normalized paths. Useful when devs have different paths on their systems and there are differences in all snapshots.
     // 'jest-serializer-path',
-    'jest-emotion'
+    'jest-emotion',
   ],
 
   // Tell Jest to resolve custom module directories (the ones that use relative paths instead of absolute ones)
-  moduleDirectories: ['node_modules', path.join(__dirname, 'src'), 'shared'],
+  moduleDirectories: [
+    'node_modules',
+    path.join(__dirname, 'src'),
+    'shared',
+    path.join(__dirname, 'test'),
+  ],
 
-  // Setup files to be run before any test runs
+  // Setup configurations to be run before any test runs
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
-};
+}

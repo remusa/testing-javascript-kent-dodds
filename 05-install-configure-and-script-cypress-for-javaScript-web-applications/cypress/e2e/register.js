@@ -1,7 +1,7 @@
 import {buildUser} from '../support/generate'
 
 describe('registration', () => {
-  it('should register a new user', () => {
+  it.skip('should register a new user', () => {
     const user = buildUser()
     cy.visit('/')
       .findByText(/register/i)
@@ -21,7 +21,7 @@ describe('registration', () => {
       .should('have.text', user.username)
   })
 
-  it.only(`should show an error message if there's an error registering`, () => {
+  it.skip(`should show an error message if there's an error registering`, () => {
     cy.server().route({
       method: 'POST',
       url: 'http://localhost:3000/register',

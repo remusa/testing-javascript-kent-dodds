@@ -58,6 +58,7 @@
     "eslint": "^6.2.2",
     "eslint-config-kentcdodds": "^14.4.0",
     "eslint-import-resolver-jest": "^3.0.0",
+    "eslint-plugin-cypress": "^2.10.3",
     "file-loader": "^4.2.0",
     "husky": "^3.0.4",
     "identity-obj-proxy": "^3.0.0",

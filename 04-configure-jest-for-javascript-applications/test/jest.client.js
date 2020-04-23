@@ -2,6 +2,7 @@ const path = require('path')
 
 module.exports = {
   ...require('./jest-common'),
+  displayName: 'client',
   coverageDirectory: path.join(__dirname, '../coverage/server'),
   testEnvironment: 'jest-environment-jsdom',
   testMatch: ['**/__tests__/**/*.js'],
@@ -16,7 +17,8 @@ module.exports = {
   ],
 
   // Setup coverage threshold
-  coverageThreshold: {
+  // Moved to: jest.config.js
+  /*coverageThreshold: {
     global: {
       statements: 15,
       branches: 10,
@@ -29,5 +31,5 @@ module.exports = {
       functions: 100,
       lines: 100,
     },
-  },
+  },*/
 }

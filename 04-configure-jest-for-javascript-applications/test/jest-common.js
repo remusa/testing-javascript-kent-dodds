@@ -38,9 +38,9 @@ module.exports = {
     __dirname,
   ],
 
-
   // Setup test coverage ignoring setup files
-  collectCoverageFrom: ['**/src/**/*.js'],
+  // Moved to: jest.config.js
+  // collectCoverageFrom: ['**/src/**/*.js'],
 
   // Setup coverage threshold
   // NOTE: moved to jest.client.js

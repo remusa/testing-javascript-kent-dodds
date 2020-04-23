@@ -1,7 +1,7 @@
 import '@testing-library/react'
 import React from 'react'
 import {render} from '@testing-library/react'
-import CalculatorDisplay from './src/calculator-display'
+import CalculatorDisplay from '../src/shared/calculator-display'
 import {getFlyingSuperHeros} from '../src/super-heros'
 
 describe('super heros', () => {

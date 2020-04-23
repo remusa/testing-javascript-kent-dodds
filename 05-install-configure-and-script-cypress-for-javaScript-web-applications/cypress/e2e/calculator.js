@@ -1,5 +1,5 @@
 describe('anonymous calculator', () => {
-  it.skip('can make calculations', () => {
+  it('can make calculations', () => {
     cy.visit('/')
       .findByText(/^1$/)
       .click()

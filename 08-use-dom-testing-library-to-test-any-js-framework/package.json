@@ -13,7 +13,7 @@
   "dependencies": {
     "@dojo/framework": "^6.0.3",
     "@types/jest": "^24.0.23",
-    "angular": "^1.7.9",
+    "angular": "^1.8.0",
     "backbone": "^1.4.0",
     "from-html": "^0.3.3",
     "hyperapp": "^2.0.3",
